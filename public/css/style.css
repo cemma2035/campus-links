@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.text-grey {
+    color: grey;
+}
+
+.landing-image {
+    height: 100vh;
+    margin-top: -15vh;
+    position: relative;
+    z-index: 1;
+}
+
+.landing-bg-1 {
+    height: 100vh;
+    background-image: url("../Images/Banner1.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid grey;
+    animation: zoom-image 2s linear forwards;
+    -webkit-backface-visibility: hidden;
+}
+
+.landing-bg-2 {
+    height: 100vh;
+    background-image: url("../Images/Banner2.png");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid grey;
+    animation: zoom-image 2s linear forwards;
+    -webkit-backface-visibility: hidden;
+}
+
+.landing-bg-3 {
+    height: 100vh;
+    background-image: url("../Images/Banner3.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid transparent;
+    animation: zoom-image 2s linear forwards;
+    -webkit-backface-visibility: hidden;
+}
+
+.web-nav {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    height: 15vh;
+}
+
+.landing-words-box {
+    text-align: center;
+    height: 60vh;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+.landing-words-box h4 {
+    font-size: 10vh;
+    color: white;
+    font-weight: bolder;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.info-box {
+    height: 30vh;
+}
+.info-header{
+    margin-top:8vh;
+}
+.info-header img {
+    width: 6vw;
+}
+
+.info-header p {
+    font-size: 1.2vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.zoom-effect {
+    background-color: white;
+    z-index: 1;
+    box-shadow: 1px 1px 8px grey;
+    animation-fill-mode: backwards;
+    border-radius: 5px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.zoom-effect:hover {
+    z-index: 2;
+    cursor: pointer;
+    /* position: relative;
+    animation-name: move-up !important;
+    animation-duration: 1s; */
+    transform: translate(0px, -1vh) !important;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* @keyframes white-to-grey{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: lightgrey;
+    }
+} */
+.wow {
+    visibility: hidden;
+}
+
+.popup-svg {
+    margin-top: 68vh;
+    margin-left: 20vw;
+    z-index: 1000;
+}
+
+.popup-info {
+    display: none;
+    height: 20vh;
+    width: 30vw;
+    background-color: inherit;
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 70vh;
+    margin-left: 10vw;
+    z-index: 1001;
+}
+
+.dark-bg {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.more-info-con{
+    height: 80vh;
+}
+.get-involved-con{
+    height:100%;
+}
+.get-involved-img{
+    border-radius: 20px;
+    background-image: url("../Images/get-involed-img.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.get-involved-img h2{
+}
+@media (max-width:575px){
+    .zoom-effect {
+        margin-bottom: 3vh;
+    }
+    .info-header{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .landing-image{
+        height:40vh;
+    }
+    .landing-bg-2{
+        height:40vh;
+    }
+    .landing-bg-1{
+        height:40vh;
+    }
+    .landing-bg-3{
+        height:40vh;
+    }
+    .landing-words-box h4{
+        font-size: 5vw;
+        margin-top: 8vh;
+    }
+}
+@media (min-width:576px) and (max-width:767px){
+    .zoom-effect {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-bottom: 3vh;
+    }
+    .landing-image{
+        height:70vh;
+    }
+    .landing-bg-2{
+        height:70vh;
+    }
+    .landing-bg-1{
+        height:70vh;
+    }
+    .landing-bg-3{
+        height:70vh;
+    }
+    .landing-words-box h4{
+        font-size: 6vw;
+        margin-top: 8vh;
+    }
+}
+@media (min-width:769px) and (max-width:992px){
+    .zoom-effect {
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-bottom: 3vh;
+    }
+}
